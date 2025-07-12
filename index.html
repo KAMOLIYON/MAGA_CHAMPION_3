@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VOVO Market — Магазин мечты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <div class="logo">🛒 <span>VOVO Market</span></div>
+            <input type="search" id="search" placeholder="Поиск товаров..." autocomplete="off" />
+            <div class="cart-icon" id="cart-icon" aria-label="Корзина" role="button" tabindex="0">
+                🧺 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1>Добро пожаловать в <span>VOVO Market</span></h1>
+                <p>Лучший супермаркет для ваших ежедневных покупок</p>
+                <a href="#products" class="btn-primary">Перейти к товарам</a>
+            </div>
+        </section>
+
+        <section id="products" class="container products">
+            <!-- Товары будут здесь -->
+        </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Корзина">
+        <h2>Ваша корзина</h2>
+        <ul id="cart-items"></ul>
+        <p class="total">Итого: <span id="total">0</span> сомони</p>
+        <button class="btn-primary" id="checkout-btn">Оформить заказ</button>
+        <button class="btn-secondary" id="clear-btn">Очистить корзину</button>
+        <button class="cart-close" id="cart-close" aria-label="Закрыть корзину">&times;</button>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
